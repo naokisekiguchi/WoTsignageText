@@ -121,4 +121,4 @@ else{
 
 ## 次のステップ
 * 続いて、距離センサを使用した画面スクロール機能を追加していきます。
-* WoTsignage part3に移動してください。
+* [WoTsignage part3](https://github.com/naokisekiguchi/WoTsignageText/blob/master/chirimenWotSignage3.md)に移動してください。
