@@ -214,4 +214,4 @@ $('html,body').animate({scrollTop: sx}, 500, 'swing');
 
 ## 次のステップ
 * 続いてwikipedia APIと組み合わせてウェブコンテンツを切り替える処理を追加していきます。
-* WoTsignage part4に移動してください。
+* [WoTsignage part4](https://github.com/naokisekiguchi/WoTsignageText/blob/master/chirimenWotSignage4.md)に移動してください。
