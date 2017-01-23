@@ -28,7 +28,7 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 ### CHIRIMENの各端子の役割
 * CHIRIMENのインターフェースについて。
 
-![スライド8.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/interface.jpg "スライド8.jpg")
+![interface.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/interface.jpg "interface.jpg")
 
 
 ### CHIRIMEN取り扱い時の注意点
@@ -44,7 +44,7 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 * アプリ画面が表示されたら、マウスを使用して操作をしてみる。左クリックが選択、右クリックがホームボタンの役割となる。
 * 設定画面（settings）からWiFiの接続設定を行う。
 
-![IMG_2259.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/chirimenSetting.jpg "IMG_2259.jpg")
+![chirimenSetting.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/chirimenSetting.jpg "chirimenSetting.jpg")
 
 
 ## CHIRIMEN開発環境の準備
@@ -110,6 +110,9 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 * シールドをCHIRIMENと同じ向きに差し込みます。
 * このシールドはLED、タクトスイッチ、距離センサ（SRF02）、温度センサ（ADT7410）が簡単に接続できるコネクタが用意されており、さらに10個のgroveコネクタがついています。
 * シールドがない場合は[CHIRIMEN hello world](http://fabble.cc/chirimenedu/chirimenhelloworld)を参考にしてLED回路を準備してください。
+
+![hardwareSetting.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/hardwareSetting.jpg "hardwareSetting.jpg")
+
 
 ## ベースとなるjavascriptを作成
 * まずはjavascriptの内容を[chirimenAppBase.js](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/chirimenAppBase.js)のように作成してください。
@@ -247,7 +250,7 @@ addEventLink();
 
 
 ### これまでのjsコード
-* これまでの全体のjsコードは[led-blinkのmain.js](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/js/main.js)のようになります。
+* これまでの全体のjsコードは[led-blinkブランチのmain.js](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/js/main.js)のようになります。
 * うまく作成できていれば、リンクをクリックした時にLEDが点灯し、1秒後に消灯するようになっているはずです。
 
 ## 次のステップ
