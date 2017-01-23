@@ -41,10 +41,13 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 
 ## ハードウェアの準備
 * 前回同様、CHIRIMEN Basic Shieldを使用します。
-* SRF02という印字のある場所に図のように距離センサ(SRF02 を接続してください。
-* シールドがない場合はCHIRIMEN I2C sensorを参考にして回路を準備してください。
+* SRF02という印字のある場所に図のように距離センサ(SRF02)を接続してください。
 
 ![hardwareSetting-distanceSensor.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/hardwareSetting-distanceSensor.jpg "hardwareSetting-distanceSensor.jpg")
+
+* 以下の画像は距離センサを接続するための回路図です。シールドがない場合は以下の画像を参考にして回路を準備してください。
+
+![srf02Breadboard.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/srf02Breadboard.jpg "srf02Breadboard.jpg")
 
 ## I2Cの初期化処理
 * I2C接続の距離センサを扱うために必要なI2Cの初期化処理を記述していきます。

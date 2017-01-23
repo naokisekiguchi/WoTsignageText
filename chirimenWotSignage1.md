@@ -109,9 +109,11 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 * 今回は簡単にLEDを接続できるよう[CHIRIMEN Basic Shield](https://github.com/chirimen-oh/shields/tree/master/CHIRIMENBasicShield)を使用します。
 * シールドをCHIRIMENと同じ向きに差し込みます。
 * このシールドはLED、タクトスイッチ、距離センサ（SRF02）、温度センサ（ADT7410）が簡単に接続できるコネクタが用意されており、さらに10個のgroveコネクタがついています。
-* シールドがない場合は[CHIRIMEN hello world](http://fabble.cc/chirimenedu/chirimenhelloworld)を参考にしてLED回路を準備してください。
 
 ![hardwareSetting.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/hardwareSetting.jpg "hardwareSetting.jpg")
+
+* シールドがない場合は以下の画像を参考にしてLED回路を準備してください。
+![ledBlinkBreadboard.png](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/ledBlinkBreadboard.png "ledBlinkBreadboard.png")
 
 
 ## ベースとなるjavascriptを作成

@@ -32,9 +32,13 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 
 ## ハードウェアの準備
 * 前回同様、CHIRIMEN Basic Shieldを使用します。
-* シールドがない場合はCHIRIMEN Push buttonを参考にして回路を準備してください。
+
 
 ![hardwareSetting.jpg](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/hardwareSetting.jpg "hardwareSetting.jpg")
+
+* シールドがない場合は以下の画像を参考にして回路を準備してください。
+
+![tactSwitchBreadboard.png](https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/tactSwitchBreadboard.png "tactSwitchBreadboard.png")
 
 
 ## GPIOの初期化処理
