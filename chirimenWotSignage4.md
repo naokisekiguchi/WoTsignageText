@@ -1,4 +1,4 @@
-CHIRIMENによるWoTサイネージの作り方(part4)
+# CHIRIMENによるWoTサイネージの作り方(part4)
 
 この記事はFabbleに掲載されていた[WoTsignage edu 4](http://fabble.cc/chirimenedu/wotsignage-edu4)を転載したものです。
 
@@ -134,8 +134,8 @@ e.href = "#contents";
 
 ### いろいろなI2Cセンサの値を取得してみる
 * 距離センサ以外にも様々なI2Cセンサが存在しています。
-* [CHIRIMEN I2C sensor (task.js version)]()を参考にして、いろんなセンサの値を取得してみましょう。
+* [CHIRIMEN I2C sensor (task.js version)](https://github.com/naokisekiguchi/WoTsignageText/blob/master/chirimenI2cSensors.md)を参考にして、いろんなセンサの値を取得してみましょう。
 
 ### サーボモータを動かしてみる
 * センサ以外にもI2Cでモータを動かすことも可能です。
-* [CHIRIMEN Servo (task.js version)]() を参考にサーボモータを制御してみましょう。
+* [CHIRIMEN Servo (task.js version)](https://github.com/naokisekiguchi/WoTsignageText/blob/master/chirimenServo.md) を参考にサーボモータを制御してみましょう。

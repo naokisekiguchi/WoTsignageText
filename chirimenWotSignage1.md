@@ -1,4 +1,4 @@
-CHIRIMENによるWoTサイネージの作り方(part1)
+# CHIRIMENによるWoTサイネージの作り方(part1)
 
 この記事はFabbleに掲載されていた[WoTsignage edu 1](http://fabble.cc/chirimenedu/wotsignage-edu1)を転載したものです。
 

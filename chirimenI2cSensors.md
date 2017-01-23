@@ -1,4 +1,4 @@
-CHIRIMENでI2Cのセンサーを使用する（task.jsバージョン）
+# CHIRIMENでI2Cのセンサーを使用する（task.jsバージョン）
 
 この記事はFabbleに掲載されていた記事を転載・修正したものです。
 
