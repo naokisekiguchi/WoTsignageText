@@ -126,7 +126,7 @@ e.href = "#contents";
 
 ### これまでのjsコード
 * これまでのjsコードは[wikiapiブランチのmain.js](https://github.com/naokisekiguchi/WoTSignage/blob/wikiapi/js/main.js)のようになります。
-* 全体のhtmlは[distanceブランチのindex.html](https://github.com/naokisekiguchi/WoTSignage/blob/wikiapi/index.html)のようになります。
+* 全体のhtmlは[wikiapiブランチのindex.html](https://github.com/naokisekiguchi/WoTSignage/blob/wikiapi/index.html)のようになります。
 * 正しく動作していれば、物理スイッチを押した時にランダムでWikipediaの記事を表示するようになります。
 
 ## さらに先のステップへ
