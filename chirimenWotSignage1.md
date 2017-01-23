@@ -255,4 +255,4 @@ addEventLink();
 
 ## 次のステップ
 * 続いて物理スイッチによるウェブコンテンツの切り替え機能を追加していきます。
-* WoTsignage part2に移動してください。
+* [WoTsignage part2](https://github.com/naokisekiguchi/WoTsignageText/blob/master/chirimenWotSignage2.md)に移動してください。
