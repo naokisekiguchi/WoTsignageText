@@ -94,7 +94,7 @@ console.log("pushed!!", btnValue);
 * スイッチが押された時にGPIOの値は0となるため、以下の行をスイッチが押された時の処理の部分に追加して、btnValueが0のときにid=detailの要素の中身を書き換える処理を記述します。
 
 ```
-if(!btnValue {
+if(!btnValue){
   document.getElementById("detail").innerHTML = "ちりめん（縮緬、クレープ織り、仏: crêpe）は、絹を平織りにして作った織物。 from Wiki";
 }
 ```
@@ -107,7 +107,7 @@ if(!btnValue {
 var originalContents = document.getElementById("detail").innerHTML;
 ```
 
-* if(!btnValue {...}の最後に続けて以下の行を追加して、スイッチを離したら元の内容に戻る処理を行います。
+* if(!btnValue){...}の最後に続けて以下の行を追加して、スイッチを離したら元の内容に戻る処理を行います。
 
 ```
 else{
