@@ -16,11 +16,19 @@ task.jsを使用してCHIRIMENでI2Cセンサを扱う方法。 距離センサ�
 
 * シールドがない場合は以下の画像をそれぞれ参考にして回路を準備してください。
 
+#### 温度センサの接続
+
 <img src="https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/adt7410Breadboard.jpg" width="400px">
+
+#### 距離センサの接続
 
 <img src="https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/srf02Breadboard.jpg" width="400px">
 
+#### 光センサの接続
+
 <img src="https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/groveLightBreadboard.png" width="400px">
+
+#### 加速度センサの接続
 
 <img src="https://github.com/naokisekiguchi/WoTsignageText/raw/master/images/groveAccelerometerBreadboard.png" width="400px">
 
