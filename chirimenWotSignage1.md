@@ -1,6 +1,6 @@
 CHIRIMENによるWoTサイネージの作り方(part1)
 
-この記事はFabbleに掲載されていた[WoTsignage edu 1]()を転載したものです。
+この記事はFabbleに掲載されていた[WoTsignage edu 1](http://fabble.cc/chirimenedu/wotsignage-edu1)を転載したものです。
 
 ## はじめに
 CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2Cの使い方を学ぶ。
@@ -51,7 +51,7 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 * CHIRIMENのアプリは純粋なウェブアプリなので、ウェブアプリの開発環境がそのまま使用できる。
 * ブラウザ上で直接、開発と実行ができる環境もある。
 
-* CHIRIMENを直接接続する場合、[CHIRIMENアプリ開発環境構築]()を参照して開発環境を準備する。
+* CHIRIMENを直接接続する場合、[CHIRIMENアプリ開発環境構築](http://fabble.cc/chirimenedu/chirimenhelloworld)を参照して開発環境を準備する。
 
 ## WoTサイネージアプリの開発
 * CHIRIMENのアプリ開発の基本を学ぶため、ウェブとモノとを組み合わせたサイネージ（看板）アプリを作っていきます。
@@ -87,7 +87,6 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 ## 静的webページの準備
 * WoTサイネージの作成にあたり、まずは静的なwebページの作成を行います。
 * htmlの内容を[静的webページのindex.html](https://github.com/naokisekiguchi/WoTSignage/blob/static-web/index.html)のように、cssの内容を[静的webページのmain.css](https://github.com/naokisekiguchi/WoTSignage/blob/static-web/style/main.css)のように作成します。
-※ペアプログラミング環境を利用している場合はindex.html内のmain.cssを読み込んでいる行は不要です。
 
 * 正しく作成できれば、ページ上部に大きく「CHIRIMENとは」と表示され、ページ下部にCHIRIMENの説明が書かれているwebページが確認できるはずです。
 
@@ -110,10 +109,10 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 * 今回は簡単にLEDを接続できるよう[CHIRIMEN Basic Shield](https://github.com/chirimen-oh/shields/tree/master/CHIRIMENBasicShield)を使用します。
 * シールドをCHIRIMENと同じ向きに差し込みます。
 * このシールドはLED、タクトスイッチ、距離センサ（SRF02）、温度センサ（ADT7410）が簡単に接続できるコネクタが用意されており、さらに10個のgroveコネクタがついています。
-* シールドがない場合は[CHIRIMEN hello world]()を参考にしてLED回路を準備してください。
+* シールドがない場合は[CHIRIMEN hello world](http://fabble.cc/chirimenedu/chirimenhelloworld)を参考にしてLED回路を準備してください。
 
 ## ベースとなるjavascriptを作成
-* まずはjavascriptの内容を[chirimenAppBase.js](https://gist.github.com/naokisekiguchi/f41d3d63258d115627bf6a20a24c437c)のように作成してください。
+* まずはjavascriptの内容を[chirimenAppBase.js](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/chirimenAppBase.js)のように作成してください。
 * この時点ではまだ何も起きません。
 
 ```chirimenAppBase.js
@@ -132,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ### ベース部分（task.js）の解説
 * CHIRIMENでの電子デバイス制御を簡単に記述できるようにtask.jsを使用します。
-* [CHIRIMENアプリベースjsの7行目](https://gist.github.com/naokisekiguchi/f41d3d63258d115627bf6a20a24c437c#file-main-js-L7)のspawn関数の中に基本的な処理を書いていくことになります。
+* [CHIRIMENアプリベースjsの7行目](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/chirimenAppBase.js#L7)のspawn関数の中に基本的な処理を書いていくことになります。
 * よくわからない場合は、現時点ではおまじないだと考えてください。
 
 
@@ -193,16 +192,16 @@ ledPort.write(1) ;
 ※プログラムが正しくてもLEDが正しく点滅しない場合、ブラウザのリロードなどを行ってみてください。
 
 ### これまでのjsコード
-* ここまでの全体のコードは[WoTsignage：LEDを点灯するまで](https://gist.github.com/naokisekiguchi/0e10e7cd99da4430c29db72c5c59363d)のようになります。
+* ここまでの全体のコードは[wotSignageLedOn.js](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/wotSignageLedOn.js)のようになります。
 
 ## リンククリック時のイベント処理
 * ドキュメント内のリンク（aタグ）をクリックした時のイベント処理を記述していきます。
 
 ### ドキュメント内のaタグにクリックイベント処理を追加
 * 少し処理が長いので、addEventLink() という関数を作っていきます。
-* jsの最後にこちらの[addEventLink関数](https://gist.github.com/naokisekiguchi/e5b394cf9861a933799bdb5404482fa2)を追加します。
+* jsの最後にこちらの[addEventLink関数](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/addEventLink.js)を追加します。
 
-```
+```addEventLink関数
 function addEventLink(){
   //ドキュメント内のaタグを全て取得
   Array.from(document.querySelectorAll("a"),  (e) => {
