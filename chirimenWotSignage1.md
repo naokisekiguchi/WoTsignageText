@@ -18,7 +18,10 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 
 
 ## CHIRIMENとは
-* ウェブデベロッパのためのWoT(Web of Things) デバイス開発環境です。* センサやアクチュエータも全てウェブ技術で制御でき、ウェブページを作るようにWoT デバイスアプリケーションの開発が可能となります。* ウェブとモノ(Things を組み合わせることで、これまでにない全く新しいコンセプトのデバイスが作られていくのではないか、と注目されています。* [CHIRIMEN概要資料](http://www.slideshare.net/naokisekiguchi75/chirimen-53445440)を参照。
+* ウェブデベロッパのためのWoT(Web of Things) デバイス開発環境です。
+* センサやアクチュエータも全てウェブ技術で制御でき、ウェブページを作るようにWoT デバイスアプリケーションの開発が可能となります。
+* ウェブとモノ(Things を組み合わせることで、これまでにない全く新しいコンセプトのデバイスが作られていくのではないか、と注目されています。
+* [CHIRIMEN概要資料](http://www.slideshare.net/naokisekiguchi75/chirimen-53445440)を参照。
 
 ## CHIRIMENの起動・操作方法
 * CHIRIMENの各端子の役割。
@@ -94,9 +97,10 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 ## jsの読み込み
 * CHIRIMENで電子デバイスを制御するために必要なjsを読み込む記述をhtmlに追記します。
 * <head>タグに[js読み込みの3行](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/index.html#L7-L9)を追加してください。
+* jsフォルダを作成し、[webgpio.js](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/js/webgpio.js)、[worker.gpio.js](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/js/worker.gpio.js)、[task.js](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/js/task.js)ファイルをダウンロードしてください。（リンク先のページに遷移し、RAWボタンから保存してください。）
 
 ```
-<script src="js/webgpioi2c.js"></script>
+<script src="js/webgpio.js"></script>
 <script src="js/task.js"></script>
 <script src="js/main.js" type="application/javascript;version=1.7">
 ```
@@ -118,6 +122,7 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 
 ## ベースとなるjavascriptを作成
 * まずはjavascriptの内容を[chirimenAppBase.js](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/chirimenAppBase.js)のように作成してください。
+* ファイル名をmain.jsとし、jsフォルダの中に保存してください。
 * この時点ではまだ何も起きません。
 
 ```chirimenAppBase.js
