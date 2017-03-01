@@ -39,6 +39,19 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 * GND、VCC、SDA、SCL端子をつなぐことで制御できる。接続方法は共通なので簡単にI2Cデバイスを接続するためのコネクタも存在する。（grove systemなど）
 * CHIRIMENはWebアプリからのI2C通信の読み書きに対応しているため、I2Cに対応したデバイスを制御することができる。
 
+
+## jsの読み込み
+* CHIRIMENでI2Cデバイスを制御するために必要なjsを読み込む記述をhtmlに追記します。
+* <head>タグに[webi2c.jsの読み込み](https://github.com/naokisekiguchi/WoTSignage/blob/distance/index.html#L8)を追加してください。
+* jsフォルダに[webi2c.js](https://github.com/naokisekiguchi/WoTSignage/blob/distance/js/webi2c.js)、[worker.i2c.js](https://github.com/naokisekiguchi/WoTSignage/blob/distance/js/worker.i2c.js)、ファイルをダウンロードしてください。（リンク先のページに遷移し、RAWボタンから保存してください。）
+
+```
+<script src="js/webi2c.js"></script>
+```
+
+* 必要な記述を追加したindex.htmlが[distanceブランチのindex.html](https://github.com/naokisekiguchi/WoTSignage/blob/distance/index.html)です。
+
+
 ## ハードウェアの準備
 * 前回同様、CHIRIMEN Basic Shieldを使用します。
 * SRF02という印字のある場所に図のように距離センサ(SRF02)を接続してください。
