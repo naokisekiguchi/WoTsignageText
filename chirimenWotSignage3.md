@@ -104,6 +104,7 @@ const value = yield slave.read8(<アドレス>, true);
 ```
 
 * どのようにデータを読み書きすればデバイスを制御できるかは、デバイスの種類によって異なります。
+* 以下から実際に距離センサの値を取得する処理を記述していきます。
 
 ### 距離センサの値の取得
 * 距離センサを読み込む処理は[getDistance関数](https://github.com/naokisekiguchi/WoTsignageText/blob/master/js/getDistance.js)にまとめてあります。jsの最後に追記してください。
