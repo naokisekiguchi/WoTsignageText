@@ -102,7 +102,7 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 ```
 <script src="js/webgpio.js"></script>
 <script src="js/task.js"></script>
-<script src="js/main.js" type="application/javascript;version=1.7">
+<script src="js/main.js" type="application/javascript;version=1.7"></script>
 ```
 
 * 必要な記述を追加したindex.htmlが[led-blinkのindex.html](https://github.com/naokisekiguchi/WoTSignage/blob/led-blink/index.html)です。
