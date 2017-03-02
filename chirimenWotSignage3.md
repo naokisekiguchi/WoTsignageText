@@ -65,6 +65,14 @@ CHIRIMENを使用したWoTサイネージの作成を通して、webGPIO/webI2C�
 ## I2Cの初期化処理
 * I2C接続の距離センサを扱うために必要なI2Cの初期化処理を記述していきます。
 
+### I2Cへのアクセサを取得
+* I2Cへアクセスするためのアクセサを取得します。
+* spawn関数の中に以下の行を追加してください。
+
+```
+const accessor = yield navigator.requestI2CAccess();
+```
+
 ### I2C 0番ポートの取得
 * 取得したI2Cアクセサを利用して、使用するI2Cポートオブジェクトを取得します。
 * 今回はI2C 0番ポートを距離センサ用のポートとして使用しますので、以下のように0を指定した1行を追加します。
@@ -75,13 +83,7 @@ const port = accessor.ports.get(0);
 
 * CHIRIMENには0番と2番の２つのI2Cポートがあります。
 
-### I2Cへのアクセサを取得
-* I2Cへアクセスするためのアクセサを取得します。
-* spawn関数の中に以下の行を追加してください。
 
-```
-const accessor = yield navigator.requestI2CAccess();
-```
 
 
 ## 距離センサの値の取得
