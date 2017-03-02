@@ -167,7 +167,7 @@ var ledPort;
 * spawn関数の中に以下の行を追加してください。
 
 ```
-const gpioAccessor = yield navigator.requestGPIOAccess() ;
+const gpioAccessor = yield navigator.requestGPIOAccess();
 ```
 
 * yieldの付いた箇所が非同期処理の部分になります。task.jsを利用したspawn関数内では同期処理的に記述することができます。
@@ -177,7 +177,7 @@ const gpioAccessor = yield navigator.requestGPIOAccess() ;
 * 今回はGPIO198番ポート(CHIRIMEN　CN1-9 をLED用のポートとして使用しますので、以下のように198を指定した1行を追加します。
 
 ```
-ledPort = gpioAccessor.ports.get(198) ;
+ledPort = gpioAccessor.ports.get(198);
 ```
 
 ### GPIOポートをoutputモードで初期化
@@ -194,7 +194,7 @@ yield ledPort.export("out");
 * 点灯する時は以下のように1を指定した１行を追加します。
 
 ```
-ledPort.write(1) ;
+ledPort.write(1);
 ```
 
 * 正しく動作していればLEDが点灯します。
@@ -242,7 +242,7 @@ ledPort.write(1);
 ```
 setTimeout(() => {
   //LEDを消灯させる
-  ledPort.write(0) ;
+  ledPort.write(0);
 },1000 );
 ```
 
